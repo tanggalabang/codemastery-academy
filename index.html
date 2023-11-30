@@ -131,6 +131,7 @@
       const darkModeToggle = document.getElementById("darkModeToggle");
       const body = document.body;
       const container = document.querySelector(".container");
+      const toggleContainer = document.querySelector(".toggle-container");
 
       darkModeToggle.addEventListener("change", () => {
         body.classList.toggle("dark-mode");
@@ -141,6 +142,8 @@
         const isDarkMode = body.classList.contains("dark-mode");
         container.style.color = isDarkMode ? "#fff" : "#000";
         container.style.backgroundColor = isDarkMode ? "#111" : "#fff";
+        toggleContainer.style.color = isDarkMode ? "#fff" : "#000";
+        toggleContainer.style.backgroundColor = isDarkMode ? "#111" : "#fff";
       }
     </script>
   </body>
